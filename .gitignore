@@ -1,0 +1,29 @@
+# ---- Vivado build outputs ----
+vivado/watchdog_demo_arty_a7/*.hw                   # hardware exports
+vivado/watchdog_demo_arty_a7/*.sim                  # simulation folders
+vivado/watchdog_demo_arty_a7/*.cache/
+vivado/watchdog_demo_arty_a7/*.runs/
+vivado/watchdog_demo_arty_a7/*.log
+vivado/watchdog_demo_arty_a7/*.jou
+vivado/watchdog_demo_arty_a7/*.pb
+vivado/watchdog_demo_arty_a7/*.rpt
+vivado/watchdog_demo_arty_a7/*.dcp
+vivado/watchdog_demo_arty_a7/*.backup.*
+vivado/watchdog_demo_arty_a7/ip_user_files/
+vivado/watchdog_demo_arty_a7/.webtalk/
+
+# ---- Python / CircuitPython ----
+__pycache__/
+/*.py[cod]
+*.uf2       # if you ever include UF2 firmware builds
+
+# ---- OS / Editor ----
+.DS_Store
+*.swp
+*~ 
+.vscode/
+.idea/
+
+# ---- Misc ----
+*.zip
+

@@ -1,13 +1,20 @@
+# firmware/heartbeat.py
+
 import time
 import board
 import digitalio
 
-# Toggle GP0 at 1 Hz (0.5 s high, 0.5 s low)
 heartbeat = digitalio.DigitalInOut(board.GP0)
 heartbeat.direction = digitalio.Direction.OUTPUT
 
+# This drives the Pico’s little on-board LED (GP25)
+led = digitalio.DigitalInOut(board.LED)
+led.direction = digitalio.Direction.OUTPUT
+
 while True:
     heartbeat.value = True
+    led.value       = True
     time.sleep(0.5)
     heartbeat.value = False
+    led.value       = False
     time.sleep(0.5)
